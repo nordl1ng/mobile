@@ -78,7 +78,7 @@
         android:textSize="14sp"
         android:textStyle="bold"
         android:insetBottom="6dp"
-
+        app:cornerRadius="4dp"
         />
 
     <Button
@@ -97,6 +97,7 @@
         android:backgroundTint="@color/white"
         android:textSize="14sp"
         android:textStyle="bold"
+        app:cornerRadius="4dp"
         />
 
 
