@@ -4,37 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@color/main_background2"
     tools:context=".MainActivity2">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="330dp"
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Добро пожаловать!"
+        app:srcCompat="@drawable/welcome"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="65.04dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textStyle="bold"
-        android:textSize="32dp"
-        android:textColor="@color/white"
-/>
+        />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="122.36dp"
         android:layout_height="138.7dp"
-        app:srcCompat="@drawable/lion"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/lion_without"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="76.09dp"
         />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/button_in"
         android:layout_width="0dp"
-        android:layout_height="76.09dp"
+        android:layout_height="wrap_content"
         android:text="Войдите в аккаунт"
         android:textAllCaps="false"
         android:layout_marginTop="163dp"
@@ -44,10 +42,34 @@
         android:layout_marginStart="47dp"
         android:layout_marginEnd="35dp"
         android:textSize="16sp"
-        android:drawableStart="@drawable/human"
+        android:drawableLeft="@drawable/human"
         android:padding="32dp"
         android:insetBottom="6dp"
         android:background="@drawable/acc_button"
         android:textColor="@color/white"
+        android:fontFamily="@font/poppins"
+        android:gravity="center_horizontal"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_reg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Зарегистрироваться"
+        android:textAllCaps="false"
+        android:layout_marginTop="20.65dp"
+        app:layout_constraintTop_toBottomOf="@+id/button_in"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="35dp"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/human_reg"
+        android:padding="32dp"
+        android:insetBottom="6dp"
+        android:background="@drawable/reg_button"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

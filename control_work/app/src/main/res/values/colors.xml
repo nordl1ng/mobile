@@ -9,6 +9,11 @@
     <color name="button">#373A6C</color>
     <color name="yellow">#FACE76</color>
     <color name="pink">#F8A3C1</color>
-    <color name="background">#7C59B5</color>
+    <color name="reg_back">#A987F0</color>
     <color name="main_background">#5F4D9F</color>
-</resources>
+    <color name="main_background2">#7C59B5</color>
+    <color name="main_background3">#7551AB</color>
+    <color name="login">#402B7B</color>
+    <color name="pass">#64C1AB</color>
+    <color name="pass_confirm">#7CA6F6</color>
+    </resources>

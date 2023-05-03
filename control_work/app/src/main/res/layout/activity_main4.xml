@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background3"
+    tools:context=".MainActivity4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="173dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="53.28dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/create_akk" />
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView1"
+                android:layout_marginTop="181.05dp"
+                app:srcCompat="@drawable/regg"
+                />
+
+            <EditText
+                android:id="@+id/EditText"
+                android:layout_width="329dp"
+                android:layout_height="70.87dp"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="39.25dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/login"
+                android:drawableLeft="@drawable/human_3"
+                android:hint="Логин или email"
+                android:insetBottom="6dp"
+                android:paddingStart="32dp"
+                android:textAllCaps="false"
+                android:textColorHint="@color/login"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <EditText
+                android:id="@+id/EditText2"
+                android:layout_width="329dp"
+                android:layout_height="70.87dp"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="18.91dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/pass_back"
+                android:drawableLeft="@drawable/key"
+                android:hint="Пароль"
+                android:insetBottom="6dp"
+                android:paddingStart="32dp"
+                android:textAllCaps="false"
+                android:textColorHint="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/EditText" />
+
+            <EditText
+                android:id="@+id/EditText3"
+                android:layout_width="329dp"
+                android:layout_height="70.87dp"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="18.91dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/pass_confirm"
+                android:drawableLeft="@drawable/key"
+                android:hint="Пароль"
+                android:insetBottom="6dp"
+                android:paddingStart="32dp"
+                android:textAllCaps="false"
+                android:textColorHint="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/EditText2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button"
+                android:layout_width="0dp"
+                android:layout_height="59.73dp"
+                android:layout_marginStart="119dp"
+                android:layout_marginTop="30.25dp"
+                android:layout_marginEnd="117dp"
+                android:background="@drawable/resume"
+                android:insetBottom="6dp"
+                android:onClick="next"
+                android:text="Продолжить"
+                android:textAllCaps="false"
+                android:textColor="@color/login"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/EditText3" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200.01dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button"
+                app:srcCompat="@drawable/re_pass"
+                android:layout_marginStart="29dp"/>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200.01dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button"
+                app:srcCompat="@drawable/forgot"
+                android:layout_marginStart="170dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
