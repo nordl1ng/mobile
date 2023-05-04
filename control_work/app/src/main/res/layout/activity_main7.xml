@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background5"
+    tools:context=".MainActivity7">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="98.23dp"
+        android:text="Восстановление
+        пароля"
+        android:lines="2"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="292.23dp"
+        android:text="Пожалуйста, введите логин или эл. почту, на которые был зарегистрирован аккаунт"
+        android:lines="2"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="59.73dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginEnd="117dp"
+        android:background="@drawable/resume"
+        android:insetBottom="6dp"
+        android:onClick="next"
+        android:text="Отправить"
+        android:textAllCaps="false"
+        android:textColor="@color/login"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="462.23dp"/>
+
+    <EditText
+        android:id="@+id/EditText1"
+        android:layout_width="329dp"
+        android:layout_height="70.87dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/login"
+        android:drawableLeft="@drawable/mail"
+        android:hint="Логин или email"
+        android:insetBottom="6dp"
+        android:paddingStart="32dp"
+        android:textAllCaps="false"
+        android:textColorHint="@color/login"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="365.23dp"
+        android:drawablePadding="18dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="549.23dp"
+        android:text="Вернуться"
+        android:lines="2"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins"
+        android:onClick="next2"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

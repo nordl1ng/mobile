@@ -48,8 +48,8 @@
         android:background="@drawable/acc_button"
         android:textColor="@color/white"
         android:fontFamily="@font/poppins"
-        android:gravity="center_horizontal"
-        android:drawablePadding="-74dp"
+        android:drawablePadding="-65dp"
+        android:onClick="next"
         />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -71,6 +71,8 @@
         android:background="@drawable/reg_button"
         android:textColor="@color/white"
         android:fontFamily="@font/poppins"
-        android:drawablePadding="-74dp"
+        android:paddingStart="30dp"
+        android:drawablePadding="-50dp"
+        android:onClick="next2"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

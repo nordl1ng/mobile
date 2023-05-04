@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val timer = object : CountDownTimer(4000,500)
+        val timer = object : CountDownTimer(2000,250)
         {
             override fun onTick(millisUntilFinished: Long){
 
