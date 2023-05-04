@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background5"
+    tools:context=".MainActivity5">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="96.23dp"
+        android:text="Восстановление
+        пароля"
+        android:lines="2"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="284.26dp"
+        android:text="Проверьте электронную почту!"
+        android:lines="2"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins"
+
+        />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="250.46dp"
+        android:text="Пароль отправлен!"
+        android:lines="2"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="59.73dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginEnd="117dp"
+        android:background="@drawable/resume"
+        android:insetBottom="6dp"
+        android:onClick="next"
+        android:text="Вернуться"
+        android:textAllCaps="false"
+        android:textColor="@color/login"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="525.09dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="164dp"
+        android:layout_height="164dp"
+        app:srcCompat="@drawable/check"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="327.09dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

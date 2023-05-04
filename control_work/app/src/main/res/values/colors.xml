@@ -13,6 +13,7 @@
     <color name="main_background">#5F4D9F</color>
     <color name="main_background2">#7C59B5</color>
     <color name="main_background3">#7551AB</color>
+    <color name="main_background5">#25133B</color>
     <color name="login">#402B7B</color>
     <color name="pass">#64C1AB</color>
     <color name="pass_confirm">#7CA6F6</color>
