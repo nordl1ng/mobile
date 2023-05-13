@@ -43,7 +43,7 @@
         android:layout_marginEnd="35dp"
         android:textSize="16sp"
         android:drawableLeft="@drawable/human"
-        android:padding="32dp"
+        android:padding="50dp"
         android:insetBottom="6dp"
         android:background="@drawable/acc_button"
         android:textColor="@color/white"
