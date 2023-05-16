@@ -85,6 +85,24 @@
                 android:textSize="14sp"
                 android:lines="2"/>
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/textView3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="20dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:spanCount="2"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="0dp"
+                android:orientation="horizontal"
+                tools:listitem="@layout/poster_main"
+                />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
