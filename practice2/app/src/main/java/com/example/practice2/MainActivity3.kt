@@ -1,6 +1,7 @@
 package com.example.practice2
 
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -14,6 +15,7 @@ class MainActivity3 : AppCompatActivity() {
     lateinit var mail:EditText
     lateinit var pass: EditText
     lateinit var passrep: EditText
+    var preff: SharedPreferences?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
@@ -22,12 +24,23 @@ class MainActivity3 : AppCompatActivity() {
         mail= findViewById(R.id.editTextTextPersonName3)
         pass= findViewById(R.id.editTextTextPersonName4)
         passrep= findViewById(R.id.editTextTextPersonName5)
+        preff=getSharedPreferences("TABLEE", MODE_PRIVATE)
+        name.setText(preff?.getString("name",""))
     }
-
+    fun saveData(name:String)
+    {
+        val editor=preff?.edit()
+        editor?.putString("name",name)
+        editor?.apply()
+    }
     fun next(view: View) {
         if(name.text.toString().isNotEmpty()&&family.text.toString().isNotEmpty()&&mail.text.toString().isNotEmpty()&&passrep.text.toString().isNotEmpty())
         {
             Toast.makeText(this,"Регистрация прошла успешно",Toast.LENGTH_LONG).show()
+            val value: String=name.text.toString()
+            saveData(value)
+            val inten= Intent(this,ToolbarActivity::class.java)
+            startActivity(inten)
         }
         else
         {
@@ -45,3 +58,4 @@ class MainActivity3 : AppCompatActivity() {
         finish()
     }
 }
+

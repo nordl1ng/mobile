@@ -124,7 +124,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
 
-
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button"
                 android:layout_width="0dp"
@@ -134,16 +133,17 @@
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/red_but"
                 android:insetBottom="6dp"
+                android:onClick="next"
                 android:text="ЗАРЕГИСТРИРОВАТЬСЯ"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
-                android:onClick="next"/>
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button2"
                 android:layout_width="0dp"
