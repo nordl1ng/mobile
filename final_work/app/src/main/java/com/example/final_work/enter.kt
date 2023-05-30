@@ -36,7 +36,7 @@ class enter : AppCompatActivity() {
     fun next(view: View) {}
 
     fun next2(view: View) {
-        deleteAll()
+        deleteAllregi()
         var intent = Intent(this@enter,regi::class.java)
         startActivity(intent)
         finish()
@@ -61,10 +61,20 @@ class enter : AppCompatActivity() {
     }
 
 
-    fun deleteAll()
+    fun deleteAllremenber()
     {
         val editor=preff?.edit()
-        editor?.clear()
+        editor?.remove("key1")
+        editor?.remove("key2")
+        editor?.apply()
+    }
+
+    fun deleteAllregi()
+    {
+        val editor=preff?.edit()
+        editor?.remove("mail")
+        editor?.remove("pass")
+        editor?.remove("name")
         editor?.apply()
     }
 
@@ -73,22 +83,30 @@ class enter : AppCompatActivity() {
         val value: String=email.text.toString()
         val value2: String=password.text.toString()
         val checkboxstate:Boolean=check.isChecked
-        if (checkboxstate==true){
-            saveData(value,value2)
-            savestate(checkboxstate)
-        }
-        else
-        {
-            deleteAll()
-        }
+
 
         if(mail.text.toString().isNotEmpty()&&pass.text.toString().isNotEmpty())
         {
             if (emailValid(mail.text.toString()))
             {
-                val intent = Intent(this@enter, learn::class.java)
-                startActivity(intent)
-                finish()
+                if (mail.text.toString()==preff?.getString("mail", "") && pass.text.toString()==preff?.getString("pass", "")) {
+                    if (checkboxstate==true){
+                        saveData(value,value2)
+                        savestate(checkboxstate)
+                    }
+                    else
+                    {
+                        deleteAllremenber()
+                    }
+                    val intent = Intent(this@enter, learn::class.java)
+                    startActivity(intent)
+                    finish()
+                }
+                else {            var alert = AlertDialog.Builder(this)
+                    .setTitle("Неправильный e-mail или пароль")
+                    .setPositiveButton("ok", null)
+                    .create()
+                    .show()}
             }
             else{
                 Toast.makeText(this,"Ошибка email", Toast.LENGTH_LONG).show()

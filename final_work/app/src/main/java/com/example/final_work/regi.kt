@@ -29,11 +29,15 @@ class regi : AppCompatActivity() {
         passrep= findViewById(R.id.editTextTextPersonName5)
         preff=getSharedPreferences("TABLEE", MODE_PRIVATE)
         name.setText(preff?.getString("name",""))
+        mail.setText(preff?.getString("mail",""))
+        pass.setText(preff?.getString("pass",""))
     }
-    fun saveData(name:String)
+    fun saveData(name:String,mail:String, pass:String )
     {
         val editor=preff?.edit()
         editor?.putString("name",name)
+        editor?.putString("mail",mail)
+        editor?.putString("pass",pass)
         editor?.apply()
     }
     fun emailValid(text:String):Boolean
@@ -48,8 +52,10 @@ class regi : AppCompatActivity() {
                 if (pass.text.toString()==passrep.text.toString())
                 {
                     Toast.makeText(this, "Регистрация прошла успешно", Toast.LENGTH_LONG).show()
-                    val value: String = name.text.toString()
-                    saveData(value)
+                    val value1: String = name.text.toString()
+                    val value2: String = mail.text.toString()
+                    val value3: String = pass.text.toString()
+                    saveData(value1,value2,value3 )
                     val inten = Intent(this, learn::class.java)
                     startActivity(inten)
                 }
