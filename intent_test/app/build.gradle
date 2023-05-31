@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.practice7'
+    namespace 'com.example.intent_test'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.practice7"
+        applicationId "com.example.intent_test"
         minSdk 28
         targetSdk 33
         versionCode 1
@@ -33,9 +33,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.bumptech.glide:glide:4.12.0'
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.5.0'

@@ -10,25 +10,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Final_work"
+        android:theme="@style/Theme.Intent_test"
         tools:targetApi="31">
         <activity
-            android:name=".result"
+            android:name=".avar"
             android:exported="false" />
         <activity
-            android:name=".test"
-            android:exported="false" />
-        <activity
-            android:name=".rvactivity"
-            android:exported="false" />
-        <activity
-            android:name=".learn"
-            android:exported="false" />
-        <activity
-            android:name=".regi"
-            android:exported="false" />
-        <activity
-            android:name=".enter"
+            android:name=".avar2"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

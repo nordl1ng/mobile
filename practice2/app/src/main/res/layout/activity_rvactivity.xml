@@ -20,7 +20,7 @@
         android:paddingEnd="15dp"
         android:paddingBottom="0dp"
         android:orientation="horizontal"
-        tools:listitem="@layout/poster_main"
+        tools:listitem="@layout/poster2_item"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

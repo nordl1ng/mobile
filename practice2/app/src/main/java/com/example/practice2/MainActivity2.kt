@@ -103,8 +103,8 @@ class MainActivity2 : AppCompatActivity() {
             deleteAll()
         }
 
-        val inten= Intent(this,ToolbarActivity::class.java)
-        startActivity(inten)
+
+
 
     }
 

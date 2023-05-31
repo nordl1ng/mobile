@@ -1,11 +1,13 @@
 package com.example.final_work
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.TextView
 import android.content.SharedPreferences
+import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 
 class learn : AppCompatActivity() {
@@ -20,5 +22,10 @@ class learn : AppCompatActivity() {
 
         val poster_res: RecyclerView =findViewById((R.id.rec_view))
         poster_res.adapter = Poster_adapter(this, posterList().list)
+        }
+    fun next(view: View) {
+        var intent = Intent(this, test::class.java)
+        startActivity(intent)
+        finish()
     }
 }
